@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Navigation_BlancoCristian</string>
+    <string name="meals_menu">Meals menu</string>
+    <string name="options">Options</string>
+    <string name="add_meals">Add meals</string>
+    <string name="delete_meals">Delte meals</string>
+    <string name="list_all_meals">List all meals</string>
+    <string name="list_meals_by_title">List meals by title</string>
+    <string name="list_of_all_meals">List of all meals</string>
+    <string name="list_of_meals_by_title">List of meals by title</string>
+
+    <string name="complete_data">Complete the data</string>
+    <string name="meal_title">Meal title</string>
+    <string name="category">Category</string>
+    <string name="meal_description">Meal description</string>
+    <string name="save">Save</string>
+
+    <string name="title_label">Title</string>
+    <string name="category_label">Category</string>
+    <string name="description_label">Description</string>
+
+    <string name="delete">Delete</string>
+    <string name="search">Search</string>
+    <string name="see_details">See details</string>
+    <string name="meal_with_description">Meal with its description</string>
+    <string name="back_button_desc">Atrás</string>
+</resources>

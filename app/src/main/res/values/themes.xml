@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Navigation_BlancoCristian" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primary_orange</item>
+        <item name="colorPrimaryVariant">@color/primary_orange</item>
+        <item name="colorOnPrimary">@color/text_dark</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/button_yellow</item>
+        <item name="colorSecondaryVariant">@color/button_yellow</item>
+        <item name="colorOnSecondary">@color/text_dark</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/primary_orange</item>
+    </style>
+</resources>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_light">
+
+    <View
+        android:id="@+id/headerAdd"
+        android:layout_width="0dp"
+        android:layout_height="160dp"
+        android:background="@color/primary_orange"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivBackAdd"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/back"
+        android:clickable="true"
+        android:focusable="true"
+        android:contentDescription="@string/back_button_desc"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvCompleteData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/complete_data"
+        android:textColor="@color/text_dark"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/ivBackAdd"
+        app:layout_constraintBottom_toBottomOf="@id/headerAdd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/etMealTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="36dp"
+        android:hint="@string/meal_title"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/headerAdd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/etCategory"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="24dp"
+        android:hint="@string/category"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/etMealTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/etMealDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="24dp"
+        android:hint="@string/meal_description"
+        android:inputType="textMultiLine"
+        app:layout_constraintTop_toBottomOf="@id/etCategory"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="140dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="@color/button_yellow"
+        android:text="@string/save"
+        android:textAllCaps="false"
+        android:textColor="@color/text_dark"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:cornerRadius="24dp"
+        app:layout_constraintTop_toBottomOf="@id/etMealDescription"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

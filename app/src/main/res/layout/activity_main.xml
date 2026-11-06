@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_light">
+
+    <View
+        android:id="@+id/headerMain"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/primary_orange"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/barrierHeader" />
+
+    <TextView
+        android:id="@+id/tvMealsMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/meals_menu"
+        android:textColor="@color/text_dark"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivMealLogo"
+        android:layout_width="260dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="32dp"
+        android:src="@drawable/img_meal"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/meals_menu"
+        app:layout_constraintTop_toBottomOf="@id/tvMealsMenu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrierHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:barrierMargin="28dp"
+        app:constraint_referenced_ids="ivMealLogo" />
+
+    <TextView
+        android:id="@+id/tvOptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/options"
+        android:textColor="@color/text_dark"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/headerMain"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnAddMeals"
+        android:layout_width="220dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/button_yellow"
+        android:text="@string/add_meals"
+        android:textAllCaps="false"
+        android:textColor="@color/text_dark"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:cornerRadius="24dp"
+        app:layout_constraintTop_toBottomOf="@id/tvOptions"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnDeleteMeals"
+        android:layout_width="220dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="14dp"
+        android:backgroundTint="@color/button_yellow"
+        android:text="@string/delete_meals"
+        android:textAllCaps="false"
+        android:textColor="@color/text_dark"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:cornerRadius="24dp"
+        app:layout_constraintTop_toBottomOf="@id/btnAddMeals"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnListAllMeals"
+        android:layout_width="220dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="14dp"
+        android:backgroundTint="@color/button_yellow"
+        android:text="@string/list_all_meals"
+        android:textAllCaps="false"
+        android:textColor="@color/text_dark"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:cornerRadius="24dp"
+        app:layout_constraintTop_toBottomOf="@id/btnDeleteMeals"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnListMealsByTitle"
+        android:layout_width="220dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="14dp"
+        android:backgroundTint="@color/button_yellow"
+        android:text="@string/list_meals_by_title"
+        android:textAllCaps="false"
+        android:textColor="@color/text_dark"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:cornerRadius="24dp"
+        app:layout_constraintTop_toBottomOf="@id/btnListAllMeals"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
